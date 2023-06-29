@@ -1,0 +1,2 @@
+document.querySelector("#login-button").addEventListener("click",(e=>{const t=document.querySelector("#login-input");t.textContent=t.text,"Rebel"===t.value?location.assign("/site.html"):(alert("Password is incorrect"),t.value="")})),gsap.from("#login-heading",{duration:4,scale:.1,opacity:0,ease:"bounce"}),gsap.from("#login-input",{duration:4,scale:.1,opacity:0,ease:"bounce"}),gsap.from("#login-button",{duration:4,scale:.1,opacity:0,ease:"bounce"});
+//# sourceMappingURL=index-bundle.js.map

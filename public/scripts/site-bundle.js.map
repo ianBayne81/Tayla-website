@@ -1,0 +1,1 @@
+{"version":3,"file":"site-bundle.js","mappings":"AAEAA,KAAKC,KAAK,UAAW,CAACC,SAAU,EAAGC,GAAI,IAAKC,QAAS,EAAGC,KAAM","sources":["webpack://boilerplate/./src/site.js"],"sourcesContent":["\r\n\r\ngsap.from(\"#header\", {duration: 4, x: -300, opacity: 0, ease: \"bounce\"})\r\n\r\n\r\n\r\n"],"names":["gsap","from","duration","x","opacity","ease"],"sourceRoot":""}

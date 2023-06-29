@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login-wrapper {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-heading {
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#login-input {
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(37, 163, 163);
+    background: rgb(180, 243, 222);
+    text-align: center;
+    opacity: .6;
+}
+
+#login-button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: rgb(13, 56, 56);
+    border-radius: 5px;
+    border: 2px solid rgb(37, 163, 163);
+    background: rgb(180, 243, 222);
+    cursor: pointer;
+}
+
+#login-button:hover {
+    transform: scale(1.2);
+    font-weight: 700;
+}
+
+/* phone specific settings */
+@media screen and (min-width: 0px) and (max-width: 750px) {
+
+    #login-container {
+        background-image: url("./images/phoneloginbackground.jpg");
+        background-size: cover;
+    }
+
+    #login-heading {
+        font-size: 35px;
+    }
+
+    #login-input {
+        width: 150px;
+    
+    }
+
+    #login-button {
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
