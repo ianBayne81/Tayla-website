@@ -1,4 +1,4 @@
-
+// password functionality to access site.html
 const password = "Rebel"
 
 document.querySelector("#login-button").addEventListener("click", (e) => { 
@@ -14,7 +14,7 @@ document.querySelector("#login-button").addEventListener("click", (e) => {
     }
 })
 
-
+//GSAP element animations
 gsap.from("#login-heading", {duration: 4, scale: 0.1, opacity: 0, ease: "bounce"})
 gsap.from("#login-input", {duration: 4, scale: 0.1, opacity: 0, ease: "bounce"})
 gsap.from("#login-button", {duration: 4, scale: 0.1, opacity: 0, ease: "bounce"})
