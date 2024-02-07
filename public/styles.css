@@ -93,18 +93,22 @@
 }
 
 #animation-container {
+    height: 100%;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #animation {
-    width: 200px;
     height: 200px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px; 
     background-image: url('./images/tayla.jpg');
     background-size: 100%;
     
@@ -117,28 +121,20 @@
     opacity: 0;
 }
 
-#circle-container {
-    position: absolute;
-    z-index: -1;
-}
-
-.circle {
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    background-color: purple;
-}
-
 #monster-container {
     display: flex;
-    align-items: start;
     justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: 200px;
+    width: 300px;
+    border: 3px solid black;
 }
 
 .monsters {
     position: relative;
-    z-index: -2;
+    z-index: -1;
     height: 75px;
     width: 75px;
     margin: 10px;
@@ -174,6 +170,27 @@
     border-radius: 10px;
     background-color: black;
     color: white;
+    cursor: pointer;
+}
+
+#tile-effect {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 150px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tiles {
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    background-color: red;
+    border: 1px solid black;
 }
 
 #footer {
@@ -264,7 +281,7 @@
     }
 
     #animation-container {
-        height: 300px;
+        height: 200px;
     }
 
     #animation {
@@ -272,9 +289,8 @@
         height: 150px;
     }
 
-    #circle {
-        height: 75px;
-        width: 75px;
+    #monster-container {
+        width: 250px;
     }
 
     .monsters {
