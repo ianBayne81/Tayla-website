@@ -45,7 +45,7 @@ gsap.to(".tiles", {
     duration: 3,
     repeat: -1,
     scale: 0,
-    y: 40,
+    // y: 40,
     ease: "back",
     stagger: {
       grid: "auto",
@@ -54,17 +54,6 @@ gsap.to(".tiles", {
     }
   });
 
-  gsap.to(".box", {
-    y: 100,
-    stagger: {
-      // wrap advanced options in an object
-      each: 0.1,
-      from: "center",
-      grid: "auto",
-      ease: "power2.inOut",
-      repeat: -1, // Repeats immediately, not waiting for the other staggered animations to finish
-    },
-  });
 
 
 
