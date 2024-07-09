@@ -273,47 +273,22 @@ body {
     height: auto;
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 50px;
     display: block;
     text-align: center;
 }
 
-#monster-container {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    height: 250px;
-    width: 350px;
+#canvas {
     border: 3px solid black;
 }
 
-.monsters {
-    position: relative;
-    z-index: -1;
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    background-size: 100px 100px;
-}
-
-#monster1 {
-    background-image: url('./images/monster1.jpg');
-}
-
-#monster2 {
-    background-image: url('./images/monster2.jpg');
-}
-
-#monster3 {
-    background-image: url('./images/monster3.jpg');
-}
-
-#monster-buttons-div {
+#action-buttons-div {
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
     width: 100%;
+    margin-top: 10px;
 }
 
 .operator {
@@ -331,8 +306,45 @@ body {
     transform: scale(1.1)
 }
 
-#footer {
+#newDivsContainer {
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.newDivs {
+    height: 100vh;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    font-size: 50px;
+    opacity: .1;
+}
+
+#newDivOne {
+    background-image: url();
+    background-size: cover;
+}
+
+#newDivTwo {
+    background-image: url();
+    background-size: cover;
+}
+
+#newDivThree {
+    background-image: url();
+    background-size: cover;
+}
+
+#footer {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     height: 120px;
@@ -340,45 +352,30 @@ body {
     margin-top: 10px;
 }
 
-#gmail-logo {
-    background-image: url("/images/gmail.png");
-    background-size: 100% 100%;
+.logo {
+    background-size: cover;
     cursor: pointer;
     height:70px;
     width:70px;
     margin: 10px;
 }
 
-#gmail-logo:hover {
+.logo:hover {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+#gmail-logo {
+    background-image: url("/images/gmail.png");
 }
 
 #instagram-logo {
-    background-image: url("/images/instagram.png");
-    background-size: 100% 100%;
-    cursor: pointer;
-    height:70px;
-    width:70px;
-    margin: 10px;
+    background-image: url("/images/instagram.jpg");
 }
-#instagram-logo:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-}
+
 
 #facebook-logo {
     background-image: url("/images/facebook.jpg");
-    background-size: 100% 100%;
-    cursor: pointer;
-    height:70px;
-    width:70px;
-    margin: 10px;
-}
-
-#facebook-logo:hover {
-    transform: scale(1.2);
-    cursor: pointer;
 }
 
 /* These media query is for phone device only */
@@ -413,33 +410,13 @@ body {
             font-weight: 300;
     }
 
-    #monster-container {
-        height: 180px;
-        width: 250px;
-    }
-
-    .monsters {
-        height: 55px;
-        width: 55px;
-        background-size: 55px 55px;
-    }
-
     #footer {
         height: 80px;
     }
 
-    #gmail-logo {
+    .logo {
         height: 45px;
         width: 45px;
     }
     
-    #instagram-logo {
-        height: 45px;
-        width: 45px;
-    }
-
-    #facebook-logo {
-        height: 45px;
-        width: 45px;
-    }
 }

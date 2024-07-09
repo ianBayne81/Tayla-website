@@ -28,7 +28,6 @@ logout.addEventListener("click", function(e) {
 })
 
 //image slider code
-
 const selectBox = document.querySelector(".slide-box")
 const guageOne = document.querySelector(("#guageOne"))
 const guageTwo = document.querySelector(("#guageTwo"))
@@ -131,19 +130,41 @@ document.querySelector("#action-left").addEventListener("click", function (e) {
     
 })
 
-//create monster animation timeline and settings
-const animate = gsap.timeline({repeat:-1}).timeScale(.5)
-animate.to(".monsters", {y: +90, rotation: '+=360', stagger: 0.25, ease:'elastic'}).pause()
+//canvas element code
+const canvas = document.getElementById("canvas")
+const ctx = canvas.getContext("2d")
+canvas.width = 300
+canvas.height = 400
 
-// start animation monsters 
- document.querySelector('#start').addEventListener('click', (e) => {
-    animate.resume()
- })
-//pause animation monsters
-document.querySelector('#pause').addEventListener('click', (e) => {
-    animate.pause()
- })
 
+
+//newContainer elements transition between 3 x pages code
+window.addEventListener('scroll', function() {
+
+    const selectDivOne = document.querySelector("#newDivOne")
+    const selectDivTwo = document.querySelector("#newDivTwo")
+    const selectDivThree = document.querySelector("#newDivThree")
+
+    if (scrollY < 1150) {
+            selectDivOne.style.opacity = .1
+            selectDivOne.style.transition = 'opacity 1.5s linear'
+    }   else if (scrollY > 1150 && scrollY < 1820) {
+            selectDivOne.style.opacity = 1
+            selectDivOne.style.transition = 'opacity 1.5s linear'
+            selectDivTwo.style.opacity = .1
+            selectDivTwo.style.transition = 'opacity 1.5s linear'
+    }   else if (scrollY > 1820 && scrollY < 2500) {
+            selectDivTwo.style.opacity = 1
+            selectDivTwo.style.transition = 'opacity 1.5s linear'
+            selectDivThree.style.opacity = .1
+            selectDivThree.style.transition = 'opacity 1.5s linear'
+    }   else if (scrollY > 2500 && scrollY < 3200) {
+            selectDivThree.style.opacity = 1
+            selectDivThree.style.transition = 'opacity 1.5s linear'
+    }   
+
+    
+})
 
 
 
